@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+	<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+
+		<title>Eventos - formulários</title>
+		<script type="text/javascript">
+		function myfunction(){
+			document.getElementById("fname").style.backgroundColor="red";
+		}
+        </script>
+	</head>
+	<body>
+		<!--<input onfocus="alert('O elemento foi focado');"  type="text"/> Quando vc clicar no elemento  ele mostrará o evento onfocus<br><br>
+	    <input onblur="alert('O elemento perdeu o foco');" type="text"/>
+
+	    OBS: por algum motivo o onfocus está em loop infinito tente tira-lo dessa situação :)
+         -->
+         <select onchange="alert('A opção foi alterada!')">
+         	<option value="1">Primeira opção</option>
+         	<option value="2">Segunda opção</option>
+         </select>
+ 
+         Escolhendo a opção o onchange mostrará um alerta!<br><br>
+
+         <input type="text" id="fname" onfocus="myfunction()"> Ao clicar o fundo da área de texto ficará vermelho com o evento <strong>onfocus</strong>
+	</body>
+	</html>
+
+	<!--Eventos Formulários
+
+	onfocus - acionado quando o elemento recebe o foco do cursor.O evento onfocus é mais frequentemente usado com <input>, <select> e <a>.
+
+	onblur - acionado quando o elemnto perde o foco do cursor.
+
+	onchange - acionado quando o estado do elemento é modificado.-->

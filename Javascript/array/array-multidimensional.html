@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+	<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+
+		<title>Array Multidimensional</title>
+		<script type="text/javascript">
+               var lista_coisas = Array();
+                
+                lista_coisas["frutas"] = Array();
+                lista_coisas["pessoas"] = Array();
+                lista_coisas["carros"] = Array("Gol","Fiat","Honda-Civic","Punto");
+                lista_coisas["cores"] = Array("vermelho","preto","Branco","Azul");
+
+                lista_coisas["frutas"][1] ="Banana" ;
+                lista_coisas["frutas"][2] ="Maçã" ;
+                lista_coisas["frutas"][3] ="Morango" ;
+
+                lista_coisas["pessoas"][1]="João";
+                lista_coisas["pessoas"][2]="José";
+                lista_coisas["pessoas"][3]="Maria";
+
+                document.write(lista_coisas["frutas"][2]);
+                document.write("<br/>");
+                document.write(lista_coisas["pessoas"][2]);
+                document.write("<br/>");
+                document.write(lista_coisas["carros"][3]);
+                document.write("<br/>");
+                document.write(lista_coisas["cores"][1]);
+ 
+		        </script>
+	</head>
+	<body>
+	
+	</body>
+	</html>
+
+	<!--Array multidimensional:São arrays que estão dentro de um outro array por exemplo nos temos o array clinica e dentro dele temos o array médicos,podemos incluir muitos arrays dentro de um como se fossem uma categoria e suas categorias exemplo:
+	    var lista_curandeiros = Array(); :Array que irá armazenar outros arrays
+
+	    lista_curandeiros["medicos"] = Array("enfermeira","cerurgião","dentista","otorrino");
+
+	    document.write(lista_curandeiros["medicos"][0]);
+
+	-->

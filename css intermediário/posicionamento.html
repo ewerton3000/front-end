@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Posicionamento</title>
+	<style type="text/css">
+		body{
+			background: #61db8c;
+		
+		}
+
+		#conteudo-principal{
+			background: #FFFFFF;
+			padding: 10px;
+			width: 600px;
+			height: 2500px;
+			margin: 30px auto;
+			/*position: relative;*/
+			margin-top: 120px;
+
+		}
+		.caixa{
+       background: #1e6f44;
+       width: 100px;
+       height: 100px;
+       color: #FFFFFF;
+		}
+		#relativo{
+        position: relative;
+        left: -10px;
+        width: 660px;
+
+		}
+		#absoluta{
+			position: absolute;
+			bottom: 0;
+			right: 30px;
+		}
+		#fixo{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: #000;
+		}
+		.Absolute{
+         
+		}
+	</style>
+
+</head>
+<body>
+
+<div id="conteudo-principal">
+	 <h1>Posicionamento</h1>
+
+	 <h4>Relative</h4>
+	 <div id="relativo" class="caixa">Relative</div>
+	  <h4>Absolute</h4>
+	 <div id="absoluta" class="caixa">Absolute</div>
+	 <h4>Fixed</h4>
+	 <div id="fixo" class="caixa">Fixed</div>
+	
+</div>
+</body>
+</html>
+<!--Position:É um recurso utilizado para posicionar o seu item ou elemento baseado na sua posição inicial de todos os lados com os tipos:
+ Relative: Tem uma posição relativa ao próprio elemento exemplo position:Relative;
+ absolute:Ele deixa de preencher o espaço do próprio elemento exemplo position:absolute;
+ fixed:Deixa o elemento fixo no mesmo lugar mesmo se o seu parente(<div> ou outra tag que seja dominadora do espaço)estiver fora do seu espaço ou seja o elemento fica fixo mesmo que vc desça na página exemplo: position:fixed;
+
+
+
+OBS:caso ainda tenha duvida veja execute este arquivo no google chrome
+ -->

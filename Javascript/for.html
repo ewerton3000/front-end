@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+	<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+
+		<title>FOR</title>
+		<script type="text/javascript">
+
+			/*for(variavel;condição;incremento){
+
+			}*/
+			/*for(var x = 1; x < 11 ; x++ ){
+              //comandos
+              document.write(x + '<br/>');
+			}*/
+
+			//criando uma taboada de 1 até 10
+
+			/*for(var x = 1 ,y = 1;;x++){
+                  
+                 document.write(y * x);
+                 document.write('<br/>');
+                  if (x==10) {
+                  	y++;
+                  	x = 1;
+                  }
+                  if (y==11) {
+                  	break;
+                  }
+
+			}*/
+
+			for(var x = prompt("digite um numero da tabuada"), y = 1 , z = 1,b ;  ; y++,z++,b++){
+               x = parseInt(x);
+               b = parseInt(x);
+               document.write(b+"x"+ z +"="+ x * y);
+               document.write('<br/>');
+               if (y == 10 ) {
+               	break;
+               }
+               if (z == 10) {
+               	break;
+               }
+				
+			}
+		
+        </script>
+	</head>
+	<body>
+	
+	</body>
+	</html>

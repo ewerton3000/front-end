@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="estilo.css" rel="stylesheet">
+
+    <title>Navegação</title>
+  </head>
+  <body>
+    <!--Barra navegação-->
+      <nav class="navbar navbar-default ">
+        <div class="container">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed"
+       data-toggle="collapse" data-target="#barra-navegacao">
+        <span class="sr-only">Alternar Menu</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="#" class="navbar-brand">LOGO</a>
+    </div>
+
+
+    <div class="collapse navbar-collapse" id="barra-navegacao">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Empresa</a></li>
+        <li><a href="#">Clientes</a></li>
+        <li><a href="#">Produtos</a></li>
+
+        <li class="dropdown"><!--Usando dropdown para mais atalhos-->
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+          Minha Conta <span class="caret"></span>
+        </a>
+          <ul class="dropdown-menu"><!--Menu do dropdown-->
+        <li><a href="#">Editar</a></li>
+        <li><a href="#">Logout</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+          Teste <span class="caret"></span>
+        </a>
+          <ul class="dropdown-menu">
+        <li><a href="#">aa</a></li>
+        <li><a href="#">aa</a></li>
+          </ul>
+                  <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+          Exemplo <span class="caret"></span>
+        </a>
+          <ul class="dropdown-menu" id="fundo">
+        <li><a href="#">Exemplo 1</a></li>
+        <li><a href="#">Exemplo 2</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    </div>
+   </nav>
+    <div class="container">
+      
+<div class="page-header">
+  <h1>Navegação bootstrap</h1>
+</div>
+    
+</div>
+   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+ 
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="bootstrap/js/bootstrap.min.js"></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
+
+<!--<nav>:É uma tag do html 5 que constroi barras de navegação dentro da página-->
+
+<!--bootstrap classe de navegação-->
+
+<!--
+navbar-brand:
+
+
+nav navbar-nav:É uma classe que deixa usada nas tags <ul> e <li> para deixa-las em um formato de barra de navegação exemplo:
+
+  <ul class="nav navbar-brand">
+  <li>Exemplo 1</li>
+  <li>Exemplo 2</li>
+  </ul>
+
+  navbar-right:É uma classe que joga a barra de navegação para a direita da página
+
+dropdown:É uma classe que deixa as opções de menu escondidads e só as mostra quando clica na opção escolhida
+
+dropdown-toggle:É uma classe que desce as opções escondidas da classe dropdown
+
+collapsed:
+
+collapse:É uma classe do data-toggle
+
+icon-bar:É uma classe que insere uma traço(ou barra)que mostra a barra de navegação
+
+collapse navbar-collapse:É uma classe que deixa o menu de navegação oculto e ele corresponde com o nome da id que vc utiliza na tag escolhida com a classe data-target
+exemplo:
+
+
+ Atalho: <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#barra-navegacao">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+
+Conteúdo dentro do atalho  <div class="collapse navbar-collapse" id="barra-navegacao">
+
+  sr-only:É uma classe que faz o conteúdo aparecer na tela só para LEITORES DE  TELA exemplo:
+        <span class="sr-only">Alternar Menu</span>
+
+
+-->

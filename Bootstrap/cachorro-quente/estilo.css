@@ -1,0 +1,68 @@
+body{
+	background: url('img/fundo4.png') no-repeat;
+	max-width: auto;
+	height: auto;
+	background-size:100%;/*serve para expandir a imagem na página mesmo ela sendo pequena*/
+	background-attachment:fixed ;
+}
+.page-header h1{
+border:1px solid red ;
+font-size: 80px;
+color: red;
+text-shadow: 5px 5px  10px yellow;
+}
+
+@media screen and (max-width: 767px){
+	body{
+		background-size: 100%;
+		max-width: auto;
+	height: auto;
+	background-size:100%;/*serve para expandir a imagem na página mesmo ela sendo pequena*/
+	background-attachment:fixed ;
+	background-position:center 
+	}
+
+
+}
+/*======================================barra de navegação================================================*/
+.navbar-fundo{
+	background: linear-gradient(yellow,red 90%);
+
+}
+#icone{
+	transform: rotate(45deg);
+	position: center;
+}
+
+  
+
+
+/*=====================================Conteúdo===========================================================*/
+#info{
+	background: #FEC301;
+	font-family: arial-black,sans-serif,italic;
+	font-size: 20px;
+	color: red;
+}
+#img-demo{
+
+	width: 200px;
+	margin: 10px 15px 50px 80px;
+}
+
+
+/*====================================Artigo(article)=============================================*/
+
+#artigo{
+	background: #FEC301;
+	font-family: arial-black,sans-serif,italic;
+	font-size: 20px;
+	color: red;
+}
+
+
+/*=======================================Rodapé========================================================*/
+
+#rodape{
+	background:background: linear-gradient(yellow,red 90%); ;
+}

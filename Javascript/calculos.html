@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+	<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+
+		<title>Cálculos </title>
+		<script type="text/javascript">
+           //+ adição = soma
+           //- subtração
+           //*multiplicação
+           // / divisão
+           // % módulo = resto da divisão
+           // ++ incremento
+           // -- decremento
+ 
+			//O prompt ele não sabe identificar sozinho se o valor digitado pelo usuário é do tipo inteiro ou float ele só sabe que é do tipo string.Uma maneira de resolver isso é usando os parametros parseInt(para valores inteiros) e parseFloat(para valores float = fracionados) depois do prompt como no exemplo abaixo.
+		var num1 = prompt("Digite o valor A");
+		var num2 = prompt("Digite o valor B");
+
+		num1 = parseFloat(num1);
+		num2 = parseFloat(num2);
+         
+         //Concatenação com as variaveis(OBS:cuidado para não se confundir)
+		document.write((num1 + num2)+'<br/>');
+		document.write('A subtração entre '+ num1 + ' e ' + num2 + ' é: ' + (num1 - num2)+'<br/>');
+		document.write('A multiplicação entre '+ num1 + ' e ' + num2 + ' é: ' + (num1 * num2)+'<br/>');
+		document.write('A divisão entre '+ num1 + ' e ' + num2 + ' é: ' + (num1 / num2)+'<br/>');
+		document.write('A módulo entre '+ num1 + ' e ' + num2 + ' é: ' + (num1 % num2)+'<br/>');
+		document.write('A pré-incremento de  '+ num1 + ' é: ' + (++num1) +'<br/>');
+		document.write('A pré-decremento de  '+ num2 + ' é: ' + (++num2) +'<br/>');
+        </script>
+
+        <script type="text/javascript">
+        	document.write("<br/><br/>");
+        	document.write("Pós decrementos")
+        	document.write("<br/>");
+        	document.write('A pós-incremento de  '+ num1 + ' é: ' + (num1++) +'  depois do pós-incremento inserido ' + num1 +'<br/>');
+        	document.write('A pós-decremento de  '+ num1 + ' é: ' + (num2--) +'  depois do pós-decremento inserido ' + num1 +'<br/>');
+
+        </script>
+	</head>
+	<body>
+	
+	</body>
+	</html>
+
+	<!--Lembrando que na concatenação o javascript irá entender que  o sinal de + só será concatenado com 
+	uma string antes do sinal de +("eu sou uma string" + variavel) ou ("eu sou uma string"+ variavel + "eu sou outra variavel")-->

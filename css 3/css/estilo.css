@@ -1,0 +1,186 @@
+
+
+#box{
+	width: 400px;
+	height:  400px;
+	margin: 50px auto;
+	padding: 8px;
+	background: #009670;
+	box-shadow: 10px 4px 10px 20px black;
+	box-shadow: 10px 4px 10px 20px black,-10px -10px 2px red;
+
+}
+#box h1{
+	color: white;
+	font-size: 60px;
+	text-shadow: 20px 20px  10px black;
+	/*text-shadow: 20px 20px  rgba(0, 0, 0, 0.5);usando o rgba com text-shadow
+	text-shadow: 4px 4px black;*/
+}
+
+
+
+/*------------------------------------------ANIMAÇÔES--------------------------------------------*/
+
+/*Criar a animação*/
+@keyframes animacao-box{/*o inicio da animação*/
+form{
+
+background: red;
+
+border-radius: 0px;
+top: 0px;
+left: 0px;
+
+
+}
+
+
+
+to{ /*o final da animação*/
+
+background: yellow;
+
+border-radius: 300px;
+top: 200px;
+left: 200px;
+
+
+}
+}
+#box-animacao{
+	width: 300px;
+	height: 300px;
+ background: red;/*Por algum motivo só funciona se a cor do background for igual ao do final*/
+ position: relative;
+ /*animation-name: animacao-box;
+ animation-duration: 10s;
+ animation-delay: 3s;
+ animation-iteration-count: 2;
+ animation-direction: alternate-reverse;*/
+ animation: animacao-box 5s 7s 2 alternate;/*Aqui é a ordem de todos os parametros de cima para baixo*/
+}
+
+/*-------------------------------TRANSIÇÕES-----------------------------------------------------*/
+
+#box-transicao{
+	width: 300px;
+	height: 300px;
+	background: orange;
+}
+
+
+#box-transicao:hover{
+	width: 400px;
+	background: black;
+	transition: all 2s;/*O transition tbm permite que deixe os parametros agrupados
+	pela ordem:exemplo de cima= background 8s,width e usando o parametro all os usará ao mesmo tempo
+	exemplo: all 2s(todos os parametros terão uma animação de 2 segundos)*/
+}
+
+@keyframes animacao-camera{
+	from{
+width: 0px;
+	}
+	to{
+  width: 200px;
+	}
+}
+
+#camera{
+	width: 400px 200px 0px 0px;
+	margin: 50px 500px 500px 450px ;
+
+}
+#camera:hover{
+
+	animation-name: animacao-camera;
+	animation-duration: 5s;
+
+}
+
+/*-------------------------------DEFINIÇÔES-------------------------------------------------------*/
+/* -webkit:Para versões 50. e 4.0 do Chrome e Safari 3.1 a 5.0*/
+/*-moz-:/*Para aparecer no navegador mozila firefox
+
+exemplos: 
+
+box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	/*border-radius: 20px ;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;*/
+
+
+/*rgb: Utilizando o rgb para selecionar as cores pelos numeros de 1 até 255 para escolher uma cor
+/*rgba: O rgba tem mais um elemento que é o alfa que controla a transparencia da cor  exemplo
+
+rgba(255,255,255,0.5)*/
+
+/*background: linear-gradient: É recurso do css3 que deixa a cor no estilo gradiente utilizando duas cores ou duas vezes da mesma cor 
+ e vc pode utilizar parametros de onde a cor pode começar
+ to right: Começando da esquerda para a direita
+ to left: Começa a cor da direita para a esquerda
+ to top: começa de baixo para cima
+ to bottom: começa de cima para baixo (essa já e padrão se vc só usar as cores)
+
+Rotações em graus (20deg ou +)Escolhe a rotação das cores com um número e o deg exemplo:
+
+background:  linear-gradient(80deg,red,yellow);*/
+
+/*text-shadow: É um recurso do css3 que utiliza uma sombra por tras de qualquer caracter.Para movimenta-la vc 
+usa dois px para cada posicionamento exemplo: text-shadow: primeiro px=+pra direita e -pra esquerda  e 
+segundo px = +:pra baixo -:pra cima e o terceiro px=; 
+   h1{
+	text-shadow: 20px 60px black;
+   	}
+
+box-shadow: É um recurso do css3 que utiliza uma sombra por tras de uma caixa(box) possui as mesmas caracteristicas do;
+text-shadow com excessão de mais um px que expande a sombra
+   	*/
+
+
+
+/*-------------------------------------------------------------------------------*/
+/*Exemplos d aula
+
+*#box{
+	width: 300px;
+	height: 300px;
+	background :url("../img/camera.png");
+
+}
+
+#box h1{
+	background: rgba(255, 255, 255,0.5);
+	border-bottom: 2px solid #FFF;
+}
+
+#box{
+	width: 300px;
+	height: 300px;
+	background: linear-gradient(to right ,red,yellow)
+}*/
+
+/*------------------------------------------ANIMAÇÔES--------------------------------------------*/
+
+/*Vc pode criar animações dentro do css3 com os parametros: ; 
+animation-duration: Aqui vc controla o tempo da animação em segundos representado pelo s exemplo: animation-duration:4s;(4 segundos)
+ animation-delay: ;Aqui vc controla o delay da animação ou seja a velocidade da animação exemplo:  animation-delay:6s;
+ animation-iteration-count:; Aqui vc controla o numero de vezes que a animação será repetida com números exemplo:  animation-iteration-count: 6;
+  position::Aqui vc controla a direção da animação se ela vai estar no meio da tela,canto inferior etc...
+   com os parametros escolhidos exemplo: ;
+  position: relative;
+
+  animation-direction:Aqui vc irá definir a direção da animação exemplo: ;
+
+  animation-direction:alternate-reverse
+  alternate-reverse: alternative;
+
+hover: Um recurso do css3 que permite que quando passar a seta do mouse ele trocará para a cor ou  ;
+estado correspondente dentro do estado  hover exemplo: ;
+
+#exemplo: hover{;
+	background red} Nesse caso quando passar a seta no objeto(ele não funciona em bacckground)ele muda
+	o background para a cor vermelha(red)

@@ -1,0 +1,218 @@
+/*
+*
+*@author Jamilton Damasceno
+*@version0.1
+*/
+
+/*===========================Layout=================================*/
+html,body,.capa{/*Aqui o body terá 100% da tela ocupado mas ele ocupa o espaço do html
+	e o body não tem mudanças em ocupar 100%.Por isso o html precisa abrir mais  espaço para head body etc..
+	ele irá ocupar 100%,assim o body terá sua area aumentada tbm exemplo abaixo (OBS:  teste um de cada vez
+	e veja por si mesmo)*/
+	height: 100%;/*abrindo espaço*/
+	overflow:auto ;/*O overflow evita que o site tenha o fundo branco se arrastar a tela de um celular 
+	pro lado*/
+}
+body{
+	
+	background: url('imagens/capa.png'),/*veja que as duas fotos se completam pelo efeito de opacidade de edição de talvez um photoshop*/
+	            url('imagens/ruido.png'),
+	            linear-gradient(50deg,#ff4169,#7c26f8);/*Duas cores gradiente*/
+	            background-attachment: fixed;/*fundo fica fixo sem descer a tela toda*/
+	            font-family: Helvetica,Arial,sans-serif;/*Fontes do body*/
+	            overflow-x: hidden;/*Evitando a barra de baixo mostre mais a lateral do site*/
+
+	            /*overflow-y*/
+
+}
+/*-- Barra de Navegação --*/
+.img-logo{
+	height: 40px;
+	width: 132px;
+	display: block;
+	background: url("imagens/spotify.svg") no-repeat;
+	background-size:contain ;
+	color: transparent;/*Fez o texto("Spotify")ficar transparente*/
+}
+
+/*OBS: Repare em = nav.navbar-transparente que ele aponta a tag <nav> e a classe navbar-transparente juntas */
+nav.navbar-transparente{
+padding: 15px 0px;
+background: rgba(0,0,0,0.6);
+border: none;
+}
+.navbar-brand{
+	padding: 5px 15px;/*centralizando o logo na barra de navegação*/
+	}
+
+	.divisor{
+		width: 1px;
+		height: 16px;
+		background: white;
+		margin: 16px 10px;
+	}
+.navbar-inverse .navbar-nav>li>a,#rodape .nav a{
+color: white;
+}
+.navbar-inverse .navbar-nav>li>a:hover, #rodape .nav a:hover{
+color: #9bf0e1;
+background: none;
+}
+
+
+/*Acima podemos ver duas classes e as tags <li> e <a> que com o sinal de maior(>)
+ele indica que o atributo anterior será o pai exemplo: (li>ul) no caso o li é o
+pai e o ul é o filho ou seja ele recebe um backgorund red e o filho tbm receberá
+e tem outros casos que podem ter varios pais exemplo(form>nav>ul>li)
+o pai de todos é o form*/
+
+/*=============Imagens de Capa=======================================*/
+
+.capa{
+	display: table;
+	width: 100%;
+}
+.texto-capa{
+	text-align: center;
+	color: white;
+	display: table-cell;/**/
+	vertical-align: middle;/**/
+}
+
+/*===========Botões===============*/
+
+.btn-custom{
+	color: white;
+	border-radius: 500px;
+	-webkit-border-radius: 500px;
+	-moz-border-radius: 500px;
+	text-transform: uppercase;/*Deixando as letras maiúsculas*/
+	transition: background 0.4s,color 0.4s;/*tempo da transição de cor*/
+}
+.btn-roxo{
+background: #7c25f8;
+}
+.btn-roxo:hover{
+background-color: #6207e3;/*fundo roxo escuro*/
+color: white;/*cor da letra branca*/
+}
+.btn-branco{
+border: 2px solid white;
+}
+.btn-branco:hover{
+background-color:white ;
+color: black;}
+
+/*=========Seção de Serviços================*/
+
+#servicos{
+	background: white;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.albuns{
+	padding: 10px 0px 10px 0px;/*10px superior e 10px inferior*/
+}
+
+/*==========Recursos==================*/
+#recursos{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: white;
+}
+/*Rotacionando as imagens de telefone*/
+.rotacionar{
+    transform: rotate(30deg);
+	-ms-transform: rotate(30deg);/*IE9*/
+	-webkit-transform:  rotate(30deg);/*Chrome,Safari*/
+	padding-left: 80px;/*Jogando o fone da esquerda um pouvo pra direita*/
+}
+
+
+/*=======================================Rodapé=================================================================*/
+/*Um elemento com position: relative;está posicionado em relação à sua posição normal.
+
+Definir as propriedades superior, direita, inferior e esquerda de um elemento relativamente posicionado fará
+ com que ele seja ajustado para longe de sua posição normal. Outro conteúdo não será ajustado para caber 
+ em qualquer lacuna deixada pelo elemento.*/
+footer{
+	background: #000;
+	padding: 50px 0px 20px 0px;
+	position: relative; 
+}
+.item-rede-social{
+	float: right;/*Fazendo as imagens flutuarem para a direita*/
+}
+
+
+
+
+
+/*=============================Tipografia===========================*/
+h1{
+	
+	font-weight: 900;
+	letter-spacing: -0.05em;/*Aumenta e diminui o espaço entre as letras*/
+	margin-bottom: 50px;
+}
+h2{
+	font-size: 50px;/*Expandiu o tamanho da letra */
+	font-weight: 700;/*preenchimento em negrito*/
+	letter-spacing: -0.04em;/*espaço entre as letras*/
+}
+h3{
+	font-size: 35px;/*Expandiu o tamanho da letra */
+	font-weight: 700;/*preenchimento em negrito*/
+	letter-spacing: -0.04em;/*espaço entre as letras*/
+}
+
+
+#servicos h2,#servicos h3{/*Aqui só serão formatados os h2 e h2 dentro 
+	da tag que está com serviços */
+	color: #7c25f8;
+}
+#recursos h3{
+	color: #9bf0e1;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+/*========================================Media queries=======================================*/
+/*Media queries*/
+/*xs <768*/  /*Para dispositivos com resulução menor que 768px*/
+@media screen and (max-width: 767px){
+h1{
+	font-size: 50px;
+}
+
+.btn-custom{
+	margin:10px 15px;
+}
+}
+
+/*sm*//*Para dispositivos com resuloção maior que 768px*/
+@media screen and (min-width: 768px){
+	h1{
+		font-size:70px;
+	}
+}
+
+/*md*//*Para dispositivos com resolução ,aiores do que 992px*/
+@media screen and (min-width: 992px){
+	h1{
+		font-size: 80px;
+	}
+}
+
+/*lg*//*Para dispositivos com resolução ,aiores do que 1200px*/
+@media screen and (min-width:  1200px){
+h1{
+	font-size: 100px;
+}
+
+}
+
+btn-custom{
+	margin: 10px 15px;
+}
+}

@@ -1,0 +1,129 @@
+/*Limpar formatações padrão com o simbolo asteristico=*(ele seleciona todos os lados do site)*/
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-size: 16px;
+	font-family: "Trebuchet MS", Helvetica,sans-serif;
+	background: #f3f3f3;
+}
+#navegacao{
+	background: #fff;
+	border-bottom: 1px solid #d8d8d8;/*Borda na parte de baixo da barra dotopo do site*/
+	height: 45px;/*Abrindo a barra mais para baixo com height*/
+	position: fixed;/*Deixando a barra superior do site fixa na tela(enquanto rolar ela vai estar na tela)*/
+	width: 100%;/*definindo a largura em 100%*/
+	top: 0;/*O topo terá 0 de */
+}
+#area{
+	width: 720px;
+    margin: 0 auto;/*Centralizando o elemento na tela*/
+    
+}
+
+#area-principal{
+	width: 720px;
+    margin: 55px auto 10px auto;/*Usando o margin para dar espaço com 10px no topo 10px em baixo e auto na esquerda e direita*/
+   
+}
+#logo{
+	float: left;/*Logo ficará na esquerda*/
+}
+#menu{
+	float: right;/*Menu fica a direita*/
+	
+	padding: 10px 0;
+}
+#postagem{
+	background: #fff;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+a{
+	text-decoration: none;/*Tirando a deroração de texto (no caso remove o i=underline dos links)*/
+	padding: 5px 10px;
+}
+/*Formatação do menu*/
+  /*Links não visitados*/
+  a:link{
+  	color: #838383;
+  }
+ 
+ /*links visitados*/
+ a:visited{
+  	color: #838383;
+  }
+ /*links hover*/
+a:hover{
+	color: #fff;/*Passando o mouse as letras dos links trocam para branco*/
+	background: #b9c941;/*Ao passar o mouse o link fica com o fundo verde*/
+}
+ /*links active*/ 
+a:active{
+  	color: #535353;/*quando clicar com a lado esquerdo ou segurar os caracteres trocarão de cor*/ 
+  }
+
+h2{
+	color: #b9c941;
+}
+/*--------------------------------------------------------------------------------------------*/
+/*Classes*/
+.verde{
+
+	color: #b9c941;
+}
+.data-postagem{
+	font-size: 14px;
+	border-bottom: 1px solid #f4f4f4;
+	display: block;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+.img-postagem{
+	float: left;/*deixando o texto a esquerda*/
+	margin:0 10px 5px 0;
+}
+.postado{
+	border-left: 5px solid #d8d8d8;
+	padding-left: 5px;
+	display: block;
+	margin-top:10px ;
+}
+.img-jogos{
+	width: 600px;
+}
+.wallpaper{
+	width: 100%;
+	background-image: url("../imagens/circuito.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: ;
+}
+.img-monitor{
+	width: 400px;
+	margin-left: 140px;
+	margin-top: -33px;
+}
+.img-pc{
+	width: 500px;
+	margin-left: 140px;
+}
+.jogo{
+	background-image: url("../imagens/jogo.jpg");/*colocando a imagem eplo css*/
+	background-repeat:no-repeat ;/*Se a imagem deve repitir ou não(neste caso ela não repete)*/
+	background-position:center ;/*A posição do background pode ficar em qualque canto da tela */
+	background-attachment:fixed;/*Uma imagem de fundo que não rola com a página(fixa)*/
+	}
+	.index-wallpaper{
+		background-image: url("../imagens/ceu.jpg");/*colocando a imagem eplo css*/
+	background-repeat:no-repeat ;/*Se a imagem deve repitir ou não(neste caso ela não repete)*/
+	background-position:center ;/*A posição do background pode ficar em qualque canto da tela */
+	background-attachment:fixed;/*Uma imagem de fundo que não rola com a página(fixa)*/
+	}
+	.app-wallpaper{
+	background-image: url("../imagens/apps.jpg");/*colocando a imagem eplo css*/
+	background-repeat:no-repeat ;/*Se a imagem deve repitir ou não(neste caso ela não repete)*/
+	background-position :1920x1080 ;/*A posição do background pode ficar em qualque canto da tela */
+	background-attachment:fixed;/*Uma imagem de fundo que não rola com a página(fixa)*/
+	}

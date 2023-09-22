@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+	<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+
+		<title>Eventos - mouse</title>
+		<script type="text/javascript">
+		
+		function msgBoasVindas(){
+			alert("Seja bem vindo você pressionou o botão esquerdo do mouse sobre este elemento!");
+		}
+        </script>
+	</head>
+	<body>
+	<div onclick="alert('teste')"style="background: #ccc; height: 150px; width: 150px;">Usando o onclick </div>
+	<div onclick="msgBoasVindas()"style="background:red; height: 150px; width: 150px;">Usando o onclick com uma function</div>
+	<div ondblclick ="alert('alerta com ondbclick')"style="background: lightblue; height: 150px; width: 150px;">Usando o ondbclick ele funciona com duplo clique do lado esquerdo do mouse </div>
+	<div onmousedown ="alert('alerta com o onmousedown')"style="background: lightgreen; height: 150px; width: 150px;">Usando o onmousedown o item mostra o alerta com um clique no item ou segure o botão esquerdo do mouse em cima do item ou use o botão direito do mouse </div>
+	<div onmouseover ="alert('alerta com onmouseover')"style="background: lightyellow; height: 150px; width: 150px;">Usando o onmouseover usa o seu evento quando o mouse passa em cima do item </div>
+	<div onmouseout ="alert('alerta com onmouseout')"style="background: dimgrey; height: 150px; width: 150px;">Usando o onmouseout ele usa o seu evento quando vc tira o mouse do item</div>
+	<div onmouseout ="alert('alerta com onmouseout')" onclick="alert('alerta do onclick')"style="background: darkmagenta; height: 150px; width: 150px;">Vc pode executar dois eventos ou mais dentro de um item </div>
+	<p onmouseover="alert('alerta onmouseover no parágrafo')" style="background:darkolivegreen;">
+		este parágrafo está associado a um vento do javascript chamado onmouseover!
+	</p>
+	<span ondblclick="alert('alerta com ondbclick')" style="background:darkcyan;">De um clique duplo neste span</span>
+
+
+
+
+	</body>
+	</html>
+
+	<!--
+	Eventos
+
+
+	onclick - acionando no clique do mouse
+    
+    ondblclick - acionado noclique duplo do mouse
+
+    onmousedown acionado no clique do mouse (soltando ou não)
+    
+    onmouseover acinado quando cursor do mopuse sobrepõe o elemento o elemento da página
+
+    onmouseout acionado quando o cursor do mouse sai da área de um elemento da página
+
+    OBS:Lembrando que os evenetos podem ser usados em todos os elementos htmls
+    -->
+
+
+    

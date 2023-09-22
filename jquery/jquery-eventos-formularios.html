@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Jquery eventos-formularios</title>
+
+<!--jquery-->
+	<script src="jquery-3.6.0.js">
+		
+	</script>
+	<script type="text/javascript">
+		
+		$(document).ready( function(){
+         
+         $('#campo1').blur( function(){
+          
+          alert("Elemento perdeu o foco");
+         });
+
+         $('#campo2').change( function(){
+          
+          alert("Elemento foi modificado");
+         });
+
+         
+
+		});
+
+		/*
+		este código abaixo está com um loop infinito
+
+         $('#campo1').focus( function(){
+          
+          alert("Elemento foi focado");
+         });
+
+         
+
+		});*/
+
+	</script>
+</head>
+<body>
+
+<input id="campo1" type="text" >
+
+<select id="campo2">
+	<option value="1">Primeira opção</option>
+	<option value="2">Segunda opção</option>
+</select>
+</body>
+</html>
+
+<!--
+
+Eventos - formulários
+
+.focus() - acionado quando o elemento recebe o foco do cursor
+
+.blur()- acionado quando o elemento perde o foco do cursor
+
+.change()- acionado quando o estado do elemento é modificado
+-->

@@ -1,0 +1,42 @@
+@media screen and (max-width: 767px){/*telas menores 
+do que a resolução 767px terão background vermelho
+  */
+	body{
+		background: red;
+	}
+	p{
+		font-size: 15px;
+	}
+}
+
+@media screen and (min-width: 768px){/*telas maiores 
+do que a resolução 768px terão background azul
+  */
+	body{
+		background: blue;
+	}
+	p{
+		font-size: 30px;
+	}
+}
+@media screen and (min-width: 992px){/*telas maiores 
+do que a resolução 992px terão background laranja
+  */
+	body{
+		background: orange;
+	}
+	p{
+		font-size: 50px;
+	}
+}
+
+@media screen and (min-width: 1200px){/*telas maiores 
+do que a resolução 1200px terão background preto
+  */
+	body{
+		background: white;
+	}
+	p{
+		font-size: 100px;
+	}
+}

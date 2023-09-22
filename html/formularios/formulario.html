@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Formulários</title>
+</head>
+<body>
+
+	<h1>Formulários</h1>
+	<form>
+		Login<br>
+		<input type="text" name="login"><br>
+		Senha<br>
+		<input type="password" name="senha"><br>
+		<input type="submit" value="Login">
+	<br><br>
+	</form>
+
+	<h1>Cadastre-se</h1>
+	<form>
+		
+		Login:<br>
+		<input type="text" name=""><br>
+		<input type="radio" name="sexo">Masculino<br>
+		<input type="radio"name="sexo">Feminino<br>
+	</form>
+	<br>
+    Interesses:
+	<br>
+	<input type="checkbox">Futebol<br>
+	<input type="checkbox">Cursos<br>
+	<input type="checkbox">Eletronico<br>
+
+	Estado:<br>
+	<select>
+	<option>SP</option>
+	<option>RJ</option>
+	<option>MG</option>
+	<option>RS</option>
+	<option>MT</option>
+     </select>
+     <br>
+     Observações:<br>
+     <textarea></textarea>
+<br>
+     <input type="submit" value="cadastrar">
+</body>
+</html>
+
+<!--<form>: Usado para criação de formularios como inserir login,senha texto,dados pessoais e etc..-->
+
+<!--<input type=""> Usado para entrada de dados type:Selecionar um tipo de input será usado como text,password, -->
+<!--Os tipos de type são mts como radio que possui uma marcação para escolher exemplo
+<input type="radio">Nome 
+E outros tipos de como utilizar duas opções e marca somente uma delas com o name="" exemplo
+<input type="radio" name="numero">1
+<input type="radio" name="numero">2->
+
+<type="checkbox":Usado para criar um botão de escolha em formato de caixa exemplo
+<input type="checkbox" >Entretenimento
+
+<!-- <select> Usado para fazer uma uma seleção de escolhas em apenas um botão e a tag <option> serve para preencher as opção escolhida exemplo:
+<select>
+<option>eu</option>
+<option>você</option>
+<option>ele</option></select>-->
+
+
+<!--<textarea>: Usado para criar uma caixa de texto para preencher dados -->
+	<!--type="submit" :Usado para enviar todos os dados preenchidos no formulário via back end-->
+	<!--type name Usado para armazenar os dados via back end jogando as informações via url exemplo
+<form>
+		Login<br>
+		<input type="text" name="login"><br>
+		Senha<br>
+		<input type="password" name="senha"><br>
+		<input type="submit" value="Login">
+	<br><br>
+	</form>
+	file:///C:/Users/w/Documents/ProjetoWeb/Primeiro%20projeto/formularios/formulario.html?login=ordem&senha=123456
+	Perceba q os inputs login e senha salvam as informações via type name depois são inseridos dentro da url que fará o envio dos dados via GET
+-->
+

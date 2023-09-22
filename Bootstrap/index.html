@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="estilo.css" rel="stylesheet">
+
+    <title>Bootstrap</title>
+  </head>
+  <body>
+    <div class="container marcador2">
+
+    <div class="row ">
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 marcador">
+    <h1>1</h1>
+            
+    </div>
+          <div class="col-xs-6  col-sm-6  col-md-6 col-lg-6 marcador2">
+    <h1>2</h1>
+            
+    </div>
+    </div>
+  </div>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<script type="bootstrap/js/bootstrap.min.js"></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
+<!--
+ <h1>Hello, world!</h1>
+
+    <button class="btn btn-primary">Clique Aqui</button>
+    <button> Uma tag do bootstrap que cria um botão na página exemplo acima ;)</button>-->
+
+
+<!--------------------------------Bootstrap-------------------------->
+<!--
+É um framework do html usado para facilitar a modelagem do programador utilizando o arquivo do (ou pasta ) do bootstrap baixado em sua página na internet e ele utliza as classes pelo seu aqrquivo bootstrap.css que tem todas as classe já montadas assim vc só seleciona a classe correspondente a o que vc quer fazer na sua página 
+
+OBS:vc precisa link o arquivo bootstrap.css pela tag <link href="pasta/bootstrap.css" rel="stylesheet"> para conseguir ter acesso aos seus recursos!-->
+    <!------------------------------Containers----------------------------------------------->
+
+    <!--Os containers são um bloco de construção fundamental do Bootstrap que contém, preenche e alinha seu conteúdo em um determinado dispositivo ou janela de visualização.exemplo
+
+    <div class col-md-5></div>:Neste caso ele ocupa 5 colunas
+    OBS:O container só pode utilizar no máximo 12 colunas(col-md-12) 
+
+    class="row":É um componente de classe que cria uma linha e só cria colunas dentro da tag q possui a classe row exemplo:
+
+    <div class="row">
+    <h1 col xs6>Contedo 1</h1>
+    <h1 col xs6>Conteudo 2 </h1>
+    </div>
+
+    -----------------------------Site Responsivo--------------
+    para site responsivos que alteram o site de acordo com o tamanho do dispositivo veja neste link: https://getbootstrap.com/docs/5.0/examples/grid/#containers
+
+
+Para utilixar as classes do bootstrap vc deve utlizar a classe container para conseguir acessar outras classes.
+
+
+    Sistema de grids:É um representação dos containers e colunas do bootstrap apar controlar o tamanho dos componentes do site  
+    veja mais do conceito aqui:https://getbootstrap.com.br/docs/4.1/layout/grid/
+
+    Veja aqui o formato em imagem do sistema de grids link:http://thiagonasc.com/desenvolvimento-web/desenvolvendo-com-bootstrap-3-um-framework-front-end-que-vale-a-pena
+
+
+    Breakpoints reponsivos
+Como o bootstrap é desenvolvido para ser “mobile first” usamos varias media queries para criar sensíveis breakpoints para nossos layouts e interfaces. Esses pontos são baseadas em larguras de área de visualização miníma e nos permitem dimensionar conforme muda o tamanho da área de visualização.
+
+Bootstrap usa principalmente os seguintes intervalos de media queries, ou breakpoints, em nossos arquivos de origem do SASS para os layouts, sistemas de grid e componentes.
+
+Copy
+// Dispositivos extra small (telefones em modo retrato, com menos de 576px)
+// Sem media query para `xs`, já que este é o padrão, no Bootstrap.
+
+// Dispositivos small (telefones em modo paisagem, com 576px ou mais)
+@media (min-width: 576px) { ... }
+
+// Dispositivos médios (tablets com 768px ou mais)
+@media (min-width: 768px) { ... }
+
+// Dispositivos large (desktops com 992px ou mais)
+@media (min-width: 992px) { ... }
+
+// Dispositivos extra large (desktops grandes com 1200px ou mais)
+@media (min-width: 1200px) { ... }
+
+
+Como escrevemos nosso CSS fonte no Sass, todas as nossas consultas de mídia estão disponíveis via mixins do Sass:
+
+Copy
+// No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+@include media-breakpoint-up(sm) { ... }
+@include media-breakpoint-up(md) { ... }
+@include media-breakpoint-up(lg) { ... }
+@include media-breakpoint-up(xl) { ... }
+
+// Exemplo: Começe ocultando em  `min-width: 0`, e então mostre em no breakpoint `sm`
+.custom-class {
+  display: none;
+}
+@include media-breakpoint-up(sm) {
+  .custom-class {
+    display: block;
+  }
+}
+Ocasionalmente, usamos media queries que seguem na outra direção (no tamanho da tela fornecida ou menor):
+
+Copy
+// Dispositivos extra small (telefones em modo retrato, com menos de 576px)
+@media (max-width: 575.98px) { ... }
+
+// Dispositivos small (telefones em modo paisagem, com menos de 768px)
+@media (max-width: 767.98px) { ... }
+
+// Dispositivos médios (tablets com menos de 992px)
+@media (max-width: 991.98px) { ... }
+
+// Dispositivos large (desktops com menos de 1200px)
+@media (max-width: 1199.98px) { ... }
+
+// Dispositivos extra large (desktops grandes)
+// Nenhuma media query, já que o breakpoint extra large não possui nenhum limite acima.
+Perceba: já que browsers não suportam, atualmente, range context queries, nós contornamos as limitações dos prefixos min- e max- e viewports com larguras fracionais (pode ocorrer em algumas circunstâncias, em dispositivos de alta dpi), usando valores com precisão maior para estas comparações.
+
+Mais uma vez, essas media queries também estão disponíveis via mixins Sass:
+
+Copy
+@include media-breakpoint-down(xs) { ... }
+@include media-breakpoint-down(sm) { ... }
+@include media-breakpoint-down(md) { ... }
+@include media-breakpoint-down(lg) { ... }
+// No media query necessary for xl breakpoint as it has no upper bound on its width
+
+// Example: Style from medium breakpoint and down
+@include media-breakpoint-down(md) {
+  .custom-class {
+    display: block;
+  }
+}
+Há também media queries e mixins para selecionar um único segmento com o tamanho da tela separado pelo tamanho minímo e tamanho máximo.
+
+Copy
+// Dispositivos extra small (telefones em modo retrato, com menos de 576px)
+@media (max-width: 575.98px) { ... }
+
+// Dispositivos small (telefones em modo paisagem, com 576px ou mais)
+@media (min-width: 576px) and (max-width: 767.98px) { ... }
+
+// Dispositivos médios (tablets com 768px ou mais)
+@media (min-width: 768px) and (max-width: 991.98px) { ... }
+
+// Dispositivos large (desktops com 992px ou mais)
+@media (min-width: 992px) and (max-width: 1199.98px) { ... }
+
+// Dispositivos extra large (desktops grandes com 1200px ou mais)
+@media (min-width: 1200px) { ... }
+Essas media queries também estão disponíveis via mixins Sass:
+
+Copy
+@include media-breakpoint-only(xs) { ... }
+@include media-breakpoint-only(sm) { ... }
+@include media-breakpoint-only(md) { ... }
+@include media-breakpoint-only(lg) { ... }
+@include media-breakpoint-only(xl) { ... }
+Da mesma forma, as media querias podem abranger várias larguras de breakpoints.
+
+Copy
+// Exemplo
+// Aplica estilos, começando de dispositivos médios até os extra larges
+@media (min-width: 768px) and (max-width: 1199.98px) { ... }
+O mixin Sass para selecionar o mesmo tamanho de tela seria:
+
+Copy
+@include media-breakpoint-between(md, xl) { ... }
+
+
+
+    -->

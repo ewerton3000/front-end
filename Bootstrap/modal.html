@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="estilo.css" rel="stylesheet">
+
+    <title>Titulo da página</title>
+  </head>
+  <body>
+    <!--Barra navegação-->
+      <nav class="navbar navbar-default ">
+        <div class="container">
+
+    <div class="container">
+      
+<div class="page-header">
+  <h1>Bootstrap Modal Window</h1>
+</div>
+<button type="button" class="btn btn-info" 
+data-toggle="modal" data-target="#janela">Logar</button>
+
+<!--Janela Modal-->
+
+<form class="modal fade" id="janela">
+<div class="modal-dialog modal-lg">
+  <div class="modal-content">
+    <!--Cabeçalho-->
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal"><!--Botão X -->
+      <span>&times;</span>
+      </button>
+      <h4 class="modal-title"> Efetuar Login</h4>
+    </div>
+    <!--Corpo-->
+
+    <div class="modal-body">
+      <div class="form-group">
+        <input type="email" class="form-control" id="email" placeholder="Digite seu email">
+      </div>
+
+      <div class="modal-body">
+      <div class="form-group">
+        <input type="password" class="form-control" id="senha" placeholder="Digite sua senha">
+      </div>
+    </div>
+    <!--Rodapé-->
+    <div class="modal-footer">
+     <button type="button" class="btn btn-default" data-dismiss="modal">
+    Cancelar
+      </button>
+      <button type="submit" class="btn btn-primary">
+    Logar
+      </button>
+    </div>
+
+  </div>
+</div>  
+</form>
+
+</div>
+  
+   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+ 
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="bootstrap/js/bootstrap.min.js"></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
+
+<!--Classe do Bootstrap --->
+
+<!--Modal:É uma classe que mostra em menu ao clicar no botão ou link escolhido deixando a tela escura para mostra um outro menu este efeito e graças ao javascript dentro do bootstrap exemplo:
+
+<button type="button" class="btn btn-info" 
+data-toggle="modal" data-target="#janela">Logar</button>
+
+OBS:Use o data-toggle e coloque do tipo modal e data-target serve para pegar o id alvo então use #nomedoid 
+
+
+
+
+OBS:mais modals neste link abaixo:
+https://getbootstrap.com/docs/3.4/javascript/#modals
+
+modal-content:É uma classe que insere conteudos dentro de um menu modal construida exemplo:
+<div class="modal-content" id="nomedeid">
+Exemplo 1</div>
+
+modal-header:É uma classe que monta o cabeçalho do modal 
+
+modal-body:É uma classe que monta o corpo do modal
+
+modaç-footer:É um cabeçalho que monta o rodapé do modal
+
+exemplo dos tres abaixo:
+
+Cabeçalho
+    <div class="modal-header">
+      Cabeçalho
+    </div>
+    Corpo
+    <div class="modal-body">
+      Corpo
+    </div>
+    Cabeçalho
+    <div class="modal-footer">
+      Rodapé
+    </div>
+
+
+    close:É uma classe que é usada para cirar um botão para fechar a aplicação com o simbolo X  e usando &times; exemplo;
+
+    <button type="button" class="close" data-dismiss="modal"> 
+      <span>&times;</span>
+      </button>
+
+      modal-title:É uma classe que mostra o titulo na modal
+
+      modal fade:É uma classe que muda o efeito de mostrar e de tirar o menu modal
+
+      modal-sm:É uma classe que diminui o tamanho do menu modal
+      modal-lg:É uma classe que aumenta o tamanho do menu modal
+
+      OBS:ambos as modals sm e lg são responsivas pelo tamanho da janela 
+-->
+
+<!--Atributo do Bootstrap
+
+data-dismiss:Um atributo que fecha o modal aberto na página exemplo:
+
+<div class="modal-header">
+  <button type="button" class="close" data-dismiss="modal">
+  <span>&times</span>
+  </button>
+</div>-->

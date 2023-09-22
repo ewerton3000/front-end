@@ -1,0 +1,11 @@
+.item{
+	width: 200px;
+	height: 200px;
+	border: 2px solid black;
+	overflow: auto;
+}
+/*overflow: É um elemento do css que pode mostrar
+ ou não um conteúdo fora de um elemento ou tag exemplo acima 
+ com uma border   
+
+ OBS:Os tipos de overflow são: visible,hidden,scroll e auto*/

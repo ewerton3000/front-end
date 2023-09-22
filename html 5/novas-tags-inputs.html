@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+
+<form>
+<!--Associar Label com os elementos - Boa pratica-->
+<label for="nome">Nome</label>
+<input type="text" id="nome"><br>
+
+<!--Novos Inputs e atributos HTML 5-->
+<!--Email  atributo=required-->
+	<label for="email">Email</label>
+<input type="email " id="email" placeholder="teste@gmail.com" required>
+<br><br>
+
+<!--Número-->
+
+	<label for="numero">Número</label>
+<input type="number" id="numero" min="5" max="10">
+<br><br>
+
+<!--Url-->
+
+<label for="url">Url</label>
+<input type="url" id="url" placeholder="ex:http:www.meusite.com.br">
+<br><br>
+
+
+<!--Pesquisar-->
+
+<label for="pesquisa">Pesquisar</label>
+<input type="search" id="pesquisa" placeholder="Digite algo .......">
+<br><br>
+
+
+<!--Range-->
+
+<label for="range">Range</label>
+<input type="range" id="range" min="5" max="10" value="5">
+<br><br>
+
+
+
+<!--Data-->
+
+<label for="data">Data</label>
+<input type="date" id="data" placeholder="ex:http:www.meusite.com.br">
+<br><br>
+
+
+<!--Cor-->
+
+<label for="cor">Cor</label>
+<input type="color" id="cor">
+<br><br>
+	<input type="submit" value="Enviar">
+</form>
+</body>
+</html>
+
+<!--<label>:Uma tag do html 5 que cria uma caixa de texto e se colocar um conteudo dentro delas.Dica:se usarmos for="exemplo" com o id="exemplo" do mesmo nome na hora que clicamos no Nome da caixa ela puxará o cursor para dentro da tag que contem o mesma variavel("nome") do for e id
+
+exemplo: <label> texto</label>-->
+<!--min = mínimo do numero que vai ser puxado na caixa e  max= máximo do número step= ele vai pulando de dois em dois números-->
+<!--placeholder:Um atributo para usar dentro das tags ele coloca caracteres para exemplificar uma informação antes do usuario inserir seus dados e quando a caixa é selecionada o exemplo desaparece deixando o usuario inserir os dados-->
+
+<!--required:Um atributo para usar dentro das tags ele traz o aviso "Digite este campo" caso o usuario esqueça de inserir dados na caixa correspondente -->
+
+<!--autofocus:Um atributo que ele deixa o cursor diretamente na caixa de texto que vc selecionou no código
+
+OBS:se vc usar o require e o autofocus na mesma tag ele fará as duas ações se o usuario esquecer de preencher o campo-->
+
+<!--<range> : Uma tag do html 5 que utiliza uma barra que pode ser usada para mostrar número com os atributos min e max (onde vc pode dizer de min="1" até max="3" ali vc verá que os passos do medidor vai até três) ,value(onde pode começar os número) e outros-->

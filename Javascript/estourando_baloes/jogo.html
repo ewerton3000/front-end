@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+
+		<title>Estourando balões</title>
+      <script src="jogo.js"></script>
+	</head>
+
+	<body onload="iniciaJogo()">
+
+    <div style="float:left; width: auto; height: 500px; background: #fff; border: solid 1px #A2A2A2; margin-right: 5px;">
+    	<table border="0"><!--Inserindo uma imagem balão com tabelas-->
+    		<tr>
+    			<td>
+    				<img src="imagens/balao_azul_grande.png">
+    			</td>
+    			<!--Aqui vc usa o span para controlar o número de balões inteiros e pode ser mudado
+    				pelo JS em var qtde_baloes-->
+    			<td><span id="baloes_inteiros" style="font-size: 40px;"> </span></td>
+    		</tr>
+    	</table>
+     <br/>
+     <table border="0"><!--Inserindo uma imagem balão com tabelas-->
+    		<tr>
+    			<td>
+    				<img src="imagens/balao_azul_grande_estourado.png">
+    			</td>
+    			<td>
+    				<span id="baloes_estourados" style="font-size:40px;"> </span>
+    			</td>
+    		</tr>
+    	</table>
+    	<br/>
+
+    	<table border="0" style="width: 140px; height:132px;"><!--Inserindo uma imagem balão com tabelas-->
+    		<tr>
+    			<td style="background: url('imagens/cronometro.png'); text-align: center;">
+    				<span id="cronometro" style="color:red; font-size: 30px;"></span><!--Criando uma id para o cronometro-->
+    			</td>
+    			
+    			
+    		</tr>
+    	</table>
+    </div>
+
+    <div  id="cenario" style="float: left; width:600px; height:500px; background: url('imagens/cenario.png');background-position: bottom;">
+    	
+    </div>
+    <tr>
+    	
+    </tr>
+	</body>
+	
+</html>

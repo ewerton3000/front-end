@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<style type="text/css">
+	.absolute{
+		background: #c590f5;
+		height: 50px;
+		width: 120px;
+		position: absolute;
+		top: 35px;
+		right: 32px;
+	}
+	.relative{
+		background: #af8542;
+		height: 100px;
+		width: 300px;
+		position: relative;
+		top: 20px;
+		left: 45px;
+	}
+	.relative-parent{
+		background: #156236;
+	}
+	.fixed{
+		background: #a4c467;
+		height: 50px;
+		width: 300px;
+		position: fixed;
+		bottom: 60px;
+		right: 32px;
+	}
+</style>
+<body>
+	<div class="relative-parent">
+		<div class="relative">
+			Elemento fiho com posicionamento relativo
+		</div>
+	</div>
+<div class="absolute">
+	Elemento com posicionamento absoluto
+</div>
+<div class="fixed">
+	Elemento com posicionamento fixo
+</div>
+</body>
+</html>
