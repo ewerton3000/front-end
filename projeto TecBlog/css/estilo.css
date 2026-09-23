@@ -127,3 +127,21 @@ h2{
 	background-position :1920x1080 ;/*A posição do background pode ficar em qualque canto da tela */
 	background-attachment:fixed;/*Uma imagem de fundo que não rola com a página(fixa)*/
 	}
+	.rockinrio-wallpaper{background-image: url("../imagens/rock-in-rio-wallpaper.webp");/*colocando a imagem pelo css*/
+	background-repeat:no-repeat ;/*Se a imagem deve repitir ou não(neste caso ela não repete)*/
+	background-position:center ;/*A posição do background pode ficar em qualque canto da tela */
+	background-attachment:fixed;/*Uma imagem de fundo que não rola com a página(fixa)*/
+	}
+	.rockinrio{background-image: url("../imagens/rock-in-rio-wallpaper.webp");/*colocando a imagem pelo css*/
+	background-repeat:no-repeat ;/*Se a imagem deve repitir ou não(neste caso ela não repete)*/
+	background-position:center ;/*A posição do background pode ficar em qualque canto da tela */
+	background-attachment:fixed;/*Uma imagem de fundo que não rola com a página(fixa)*/
+	}
+.img-postagem {
+    width: 100%;
+    max-width: 660px;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+}
+
